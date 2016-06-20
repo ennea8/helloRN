@@ -21,6 +21,8 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		460C89E81D17366B00801290 /* app in Resources */ = {isa = PBXBuildFile; fileRef = 460C89E71D17366B00801290 /* app */; };
+		460C8A101D1747C000801290 /* libReactNativeControllers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 460C8A0D1D17478600801290 /* libReactNativeControllers.a */; };
 		463976BB1D153E4700C03A6B /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 463976BA1D153E3F00C03A6B /* libART.a */; };
 		46903E8D1D168E2A006A6E3D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46903E891D168E2A006A6E3D /* Accelerate.framework */; };
 		46903E8E1D168E2A006A6E3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46903E8A1D168E2A006A6E3D /* Foundation.framework */; };
@@ -102,6 +104,13 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
+		460C8A0C1D17478600801290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 460C8A081D17478500801290 /* ReactNativeControllers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8AFADBD1BEE6F3F00A4592D;
+			remoteInfo = ReactNativeControllers;
+		};
 		463976AF1D153A5E00C03A6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5975F1A79FBD4288A09D0D19 /* RNFS.xcodeproj */;
@@ -152,6 +161,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = helloRN/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = helloRN/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		460C89E71D17366B00801290 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; name = app; path = ../app; sourceTree = "<group>"; };
+		460C8A081D17478500801290 /* ReactNativeControllers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeControllers.xcodeproj; path = "../node_modules/react-native-controllers/ios/ReactNativeControllers.xcodeproj"; sourceTree = "<group>"; };
 		463976B51D153E3F00C03A6B /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		46903E891D168E2A006A6E3D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		46903E8A1D168E2A006A6E3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -194,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460C8A101D1747C000801290 /* libReactNativeControllers.a in Frameworks */,
 				46903E8F1D168E2A006A6E3D /* MediaPlayer.framework in Frameworks */,
 				46903EA41D168E93006A6E3D /* SystemConfiguration.framework in Frameworks */,
 				46903E8D1D168E2A006A6E3D /* Accelerate.framework in Frameworks */,
@@ -297,6 +309,7 @@
 		13B07FAE1A68108700A75B9A /* helloRN */ = {
 			isa = PBXGroup;
 			children = (
+				460C89E71D17366B00801290 /* app */,
 				46903EB71D16A809006A6E3D /* MyCustomModule   */,
 				463976971D15372600C03A6B /* battery */,
 				46903EB11D169682006A6E3D /* bp3l */,
@@ -317,6 +330,14 @@
 			isa = PBXGroup;
 			children = (
 				146834041AC3E56700842450 /* libReact.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		460C8A091D17478500801290 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				460C8A0D1D17478600801290 /* libReactNativeControllers.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -381,6 +402,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				460C8A081D17478500801290 /* ReactNativeControllers.xcodeproj */,
 				46903EA51D168EC2006A6E3D /* iHealthLibrary(2.0.5).a */,
 				46903EA31D168E93006A6E3D /* SystemConfiguration.framework */,
 				46903E9D1D168E69006A6E3D /* CoreBluetooth.framework */,
@@ -546,6 +568,10 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = 460C8A091D17478500801290 /* Products */;
+					ProjectRef = 460C8A081D17478500801290 /* ReactNativeControllers.xcodeproj */;
+				},
+				{
 					ProductGroup = 463976A21D153A5E00C03A6B /* Products */;
 					ProjectRef = 5975F1A79FBD4288A09D0D19 /* RNFS.xcodeproj */;
 				},
@@ -615,6 +641,13 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		460C8A0D1D17478600801290 /* libReactNativeControllers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactNativeControllers.a;
+			remoteRef = 460C8A0C1D17478600801290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		463976B01D153A5E00C03A6B /* libRNFS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -657,6 +690,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460C89E81D17366B00801290 /* app in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -776,6 +810,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-controllers/ios",
 				);
 				INFOPLIST_FILE = helloRN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -801,6 +836,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-controllers/ios",
 				);
 				INFOPLIST_FILE = helloRN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
